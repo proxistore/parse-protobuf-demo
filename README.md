@@ -1,6 +1,6 @@
 # parse-protobuf-demo
 
-The goal is to demo the parsing of a bid request from Google Authorized Buyers with the most recent version of the protobuf available when this project was created, as well as the most recent protobuf and protobuf-maven-plugin version available.
+The goal is to demo the parsing of a bid request from Google Authorized Buyers with the most recent version of the proto file available when this project was created, as well as the most recent protobuf and protobuf-maven-plugin version available.
 
 The issue is that some fields are not exposed in the generated classes, especially fields of the user object, under field 1007 which seems to be the UserExt object.
 Our interest is to gain access to the EIDs stored in the UserExt object, in this example the _pubcid.org_.

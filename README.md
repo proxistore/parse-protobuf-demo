@@ -24,6 +24,39 @@ user {
 }
 ```
 
+Another bid request sample is parsed to show the content when the field BidRequest.user.eids is populated. That second sample is very interesting as it contains BidRequest.user.eids provided by pub-7418191728211626, as well as BidRequest.user.ext.eids, provided by first-id, and it's exactly the provider that we want to get.
+
+```
+user {
+  data {
+    id: "0"
+    segment {
+      id: "368"
+    }
+    1000: {
+      1: 4
+    }
+  }
+  eids {
+    source: "pub-7418191728211626"
+    uids {
+      id: "MTh0c2c3NzE4dHNnNzcxOHRzZzc3MTh0"
+      1001: {
+        1: "ppuid"
+      }
+    }
+  }
+  1007: {
+    5: {
+      1: "first-id.fr"
+      2: {
+        1: "2ec51a54a56b4d9eb3fb8716cb6d528d"
+      }
+    }
+  }
+}
+```
+
 Full execution result:
 ```
 id: "rdEcuWmxFRbGbX2llZ693Q"
@@ -250,7 +283,256 @@ cattax: IAB_CONTENT_1_0
   }
 }
 
-==================================================
+--------------------------------------------------
 EIDs count: 0
+==================================================
+id: "D_cDfjozMT4uzw_N2foZFQ"
+imp {
+  id: "1"
+  banner {
+    w: 300
+    h: 250
+    pos: BELOW_THE_FOLD
+    wmax: 300
+    hmax: 250
+    wmin: 160
+    hmin: 46
+    format {
+      w: 300
+      h: 250
+    }
+    1014: {
+      2: {
+        1: 160
+        2: 300
+        3: 46
+        4: 250
+      }
+    }
+  }
+  displaymanager: "GOOGLE"
+  tagid: "470691131"
+  bidfloor: 1.25
+  bidfloorcur: "EUR"
+  pmp {
+    private_auction: true
+    deals {
+      id: "1821849"
+      bidfloor: 3.0
+      bidfloorcur: "EUR"
+      at: FIXED_PRICE
+      1010: {
+        1: 1
+        3: 1
+        5: {
+          1: "\001"
+        }
+        6: "\355\211\317\341\310\003"
+      }
+    }
+  }
+  secure: true
+  exp: 3600
+  metric {
+    type: "click_through_rate"
+    value: 0.007861970923841
+    vendor: "EXCHANGE"
+  }
+  metric {
+    type: "viewability"
+    value: 0.94
+    vendor: "EXCHANGE"
+  }
+  1009: {
+    1: 122611287277
+    2: 0x4e5ed5ff7c368b54
+    2: 0x034d6ac3266ceba3
+    2: 0x880dd54093c8d980
+    3: "\000"
+    8: 3
+    9: {
+      2: "2ec51a54a56b4d9eb3fb8716cb6d528d"
+    }
+    13: 33
+    13: 32
+    15: {
+      1: 2
+      2: 1
+      3: 1
+    }
+    18: 0
+    66: 0
+  }
+}
+site {
+  page: "https://cuisine.journaldesfemmes.fr/recette/327348-pancakes"
+  publisher {
+    id: "pub-7418191728211626"
+    1002: {
+      1: "FR"
+    }
+  }
+  content {
+    livestream: false
+    language: "fr"
+    genre: "Desserts and Baking,Food & Drink,Cooking"
+    data {
+      id: "0"
+      segment {
+        id: "210"
+      }
+      segment {
+        id: "217"
+      }
+      segment {
+        id: "216"
+      }
+      1000: {
+        1: 6
+      }
+    }
+  }
+  mobile: true
+  1010: {
+    1: 0
+    2: 1
+    4: {
+    }
+    5: {
+      1: 1
+      2: 0
+    }
+    6: 1
+  }
+}
+device {
+  ua: "Mozilla/5.0 (iPhone; CPU iPhone OS 26_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/390.0.817388646 Mobile/15E148 Safari/604.1"
+  ip: "196.75.66.0"
+  geo {
+    lat: 33.92
+    lon: -6.9
+    country: "MAR"
+    region: "MA-07"
+    type: IP
+    utcoffset: 60
+    accuracy: 4513
+    1004: {
+      1: 9073703
+    }
+  }
+  make: "Apple"
+  model: "iphone"
+  os: "iOS"
+  osv: "26.0.1"
+  devicetype: HIGHEND_PHONE
+  w: 320
+  h: 693
+  pxratio: 3.0
+  sua {
+    browsers {
+      brand: "Mozilla"
+      version: "5"
+      version: "0"
+    }
+    browsers {
+      brand: "AppleWebKit"
+      version: "605"
+      version: "1"
+      version: "15"
+    }
+    browsers {
+      brand: "GSA"
+      version: "390"
+      version: "0"
+      version: "817388646"
+    }
+    browsers {
+      brand: "Mobile"
+      version: "15E148"
+    }
+    browsers {
+      brand: "Safari"
+      version: "604"
+      version: "1"
+    }
+    platform {
+      brand: "iPhone"
+      version: "26"
+      version: "0"
+      version: "1"
+    }
+    mobile: true
+    bitness: "64"
+    model: "iPhone"
+    source: USER_AGENT_STRING
+  }
+  1066: {
+  }
+}
+user {
+  data {
+    id: "0"
+    segment {
+      id: "368"
+    }
+    1000: {
+      1: 4
+    }
+  }
+  eids {
+    source: "pub-7418191728211626"
+    uids {
+      id: "MTh0c2c3NzE4dHNnNzcxOHRzZzc3MTh0"
+      1001: {
+        1: "ppuid"
+      }
+    }
+  }
+  1007: {
+    5: {
+      1: "first-id.fr"
+      2: {
+        1: "2ec51a54a56b4d9eb3fb8716cb6d528d"
+      }
+    }
+  }
+}
+at: FIRST_PRICE
+tmax: 350
+cur: "EUR"
+cur: "USD"
+bcat: "IAB11-4"
+bcat: "IAB12-1"
+bcat: "IAB12-2"
+bcat: "IAB12-3"
+bcat: "IAB13-2"
+bcat: "IAB13-3"
+bcat: "IAB14-1"
+bcat: "IAB15-10"
+bcat: "IAB7-39"
+source {
+  schain {
+    complete: true
+    nodes {
+      asi: "google.com"
+      sid: "pub-7418191728211626"
+      hp: true
+    }
+    ver: "1.0"
+  }
+  1059: {
+  }
+}
+cattax: IAB_CONTENT_1_0
+1018: {
+  2: "AD8Fdm7H5Vczaehj4eKWhngL5Smwt7pjJmhYibOlkgRaPnq7_zW4HZmFHVGPchhFnbbP4SPP2A"
+  4: 1
+  5: {
+    7: 1
+  }
+}
 
+--------------------------------------------------
+EIDs count: 1
+==================================================
 ```
